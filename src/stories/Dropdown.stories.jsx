@@ -1,4 +1,4 @@
-import React from 'react';
+import { createElement } from "react";
 import Dropdown from "../lib/components/Dropdown";
 
 export default {
@@ -11,7 +11,7 @@ export default {
  },
 };
 
-const componentTemplate = (args) => <Dropdown {...args} />;
+const componentTemplate = (args) => createElement(Dropdown, args);
 
 export const Template = componentTemplate.bind({});
 Template.args = {

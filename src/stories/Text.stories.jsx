@@ -1,4 +1,4 @@
-import React from "react";
+import { createElement } from "react";
 import Text from "../lib/components/Text";
 
 export default {
@@ -22,7 +22,7 @@ export default {
   },
 };
 
- const componentTemplate = (args) => <Text {...args} />;
+ const componentTemplate = (args) => createElement(Text, args);
 
 export const Template = componentTemplate.bind({});
 Template.args = {
@@ -32,5 +32,5 @@ Template.args = {
   color: "black",
   className: "",
   id: "",
-  children: <>Sample Text</>,
+  children: "Sample Text",
 };

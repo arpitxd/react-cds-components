@@ -1,11 +1,11 @@
-import React from "react";
+import { createElement } from "react";
 import Loader from "../lib/components/Loader";
 
 export default {
   component: Loader,
 };
 
- const componentTemplate = (args) => <Loader {...args} />;
+ const componentTemplate = (args) => createElement(Loader, args);
 
 export const Template = componentTemplate.bind({});
 Template.args = {

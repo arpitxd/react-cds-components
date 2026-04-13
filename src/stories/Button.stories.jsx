@@ -1,4 +1,4 @@
-import React from "react";
+import { createElement } from "react";
 import Button from "../lib/components/Button";
 
 export default {
@@ -14,7 +14,7 @@ export default {
   },
 };
 
-const Template = (args) => <Button {...args} />;
+const Template = (args) => createElement(Button, args);
 
 export const Buttons = Template.bind({});
 Buttons.args = {
